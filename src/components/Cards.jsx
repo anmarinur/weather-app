@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from "./Card"
+import styles from './Cards.module.css'
 
 function Cards(data) {
   console.log(data)
   if(data.cities){
     return (
-      <div>
+      <div className={styles.cards}>
         {
           data.cities.map(ciudad =>
             <Card 

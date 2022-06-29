@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import style from "./SearchBar.module.css"
 
 function SearchBar(prop) {
   const [city, setCity] = useState('');
@@ -8,9 +9,9 @@ function SearchBar(prop) {
   }
 
   return (
-    <div>
-      <input type="text" placeholder="Ciudad..." onChange={handleInputChange} value={city}></input>
-      <button onClick={e => 
+    <div className={style.main}>
+      <input className={style.input} type="text" placeholder="Ciudad..." onChange={handleInputChange} value={city}></input>
+      <button className={style.button} onClick={e => 
         {
           e.preventDefault();
           prop.onSearch(city);

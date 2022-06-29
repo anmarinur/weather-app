@@ -4,7 +4,7 @@ import style from "./Nav.module.css"
 function Nav(props) {
   return (
     <div className={style.nav}>
-      <span>Weather App | Anderson Marín</span>
+      <span className={style.text}>Weather App | Anderson Marín</span>
       <SearchBar onSearch={props.onSearch}/>
     </div>
   );

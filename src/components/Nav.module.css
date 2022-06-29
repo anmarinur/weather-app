@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  background-color: #D9534F;
   height: 50px;
 }
+
+.text {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
