@@ -1,0 +1,15 @@
+{
+  "coord":{"lon":-74.0817,"lat":4.6097},
+  "weather":[{"id":301, "main":"Drizzle", "description":"drizzle", "icon":"09n"}],
+  "base":"stations",
+  "main":{"temp":11.73,"feels_like":11.41,"temp_min":11.73,"temp_max":11.73,"pressure":1030,"humidity":94},
+  "visibility":9000,
+  "wind":{"speed":1.54,"deg":150},
+  "clouds":{"all":75},
+  "dt":1656474342,
+  "sys":{"type":1,"id":8582,"country":"CO","sunrise":1656413274,"sunset":1656457864},
+  "timezone":-18000,
+  "id":3688689,
+  "name":"Bogota",
+  "cod":200
+}
