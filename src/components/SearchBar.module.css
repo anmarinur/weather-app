@@ -15,9 +15,15 @@
 }
 
 .button {
+  background-color: #FFEEAD;
   height: 35px;
   border: none;
   border-radius: 5px;
   font-family: inherit;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #96CEB4;
 }

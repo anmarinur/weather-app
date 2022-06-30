@@ -6,10 +6,18 @@
   height: 50px;
 }
 
+.div {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
 .text {
   margin-left: 10px;
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
+
+
 

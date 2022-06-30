@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import './App.css'
 import Cards from "./components/Cards"
 import Nav from "./components/Nav"
+import "./App.css"
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -45,6 +45,7 @@ function App() {
     <div>
       <Nav onSearch={onSearch} />
       <Cards cities={cities} onClose={onClose} />
+      <h2 class="h2">Weather app by Anderson Marín © 2022</h2>
     </div>
   );
 }

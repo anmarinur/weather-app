@@ -1,8 +1,82 @@
 .card {
-  border: 2px solid #000;
   background-color: #96CEB4;
+  border: 10px solid #FFF;
   border-radius: 10%;
   width: 300px;
-  height: 300px;
+  height: 250px;
   margin: 50px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px #D9534F;
+}
+
+.x {
+  display: block;
+  margin: 10px auto;
+  padding-bottom: 5px;
+  background-color: #FFEEAD;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #D9534F;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.x:hover {
+  cursor: pointer;
+  background-color: #D9534F;
+  color: #FFEEAD;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+
+.h1:hover{
+  color: #D9534F;
+  cursor: pointer;
+}
+
+.h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.p {
+  text-align: center;
+  font-size: 25px;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.subInfo {
+  width: 100px;
+}
+
+.img {
+  display: block;
+  margin: auto auto;
+  border-radius: 50%;
+  background-color:#D9534F;
 }

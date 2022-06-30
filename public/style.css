@@ -1,5 +1,11 @@
-body {
+html, body {
   margin: 0;
   font-family: 'Comfortaa', cursive;
   background-color: #FFEEAD;
+  min-height: 100vh;
 }
+
+#root {
+  min-height: 100vh;
+}
+
