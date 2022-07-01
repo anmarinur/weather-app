@@ -1,8 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
-import Cards from "./components/Cards"
-import Nav from "./components/Nav"
-import "./App.css"
+import React from 'react';
+import { useState } from 'react';
+import Cards from './components/Cards';
+import Nav from './components/Nav';
+import "./App.css";
+import { Route } from 'react-router-dom';
+import About from './components/About'
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -43,7 +45,13 @@ function App() {
 
   return (
     <div>
-      <Nav onSearch={onSearch} />
+      <Route 
+        path="/"
+        render = {() => <Nav onSearch={onSearch} />} 
+      />
+
+      <Route path="/about" component = {About} />
+      
       <Cards cities={cities} onClose={onClose} />
       <h2 class="h2">Weather app by Anderson Marín © 2022</h2>
     </div>
