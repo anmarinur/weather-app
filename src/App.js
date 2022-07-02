@@ -4,7 +4,8 @@ import Cards from './components/Cards';
 import Nav from './components/Nav';
 import "./App.css";
 import { Route } from 'react-router-dom';
-import About from './components/About'
+import About from './components/About';
+import Ciudad from './components/Ciudad';
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -51,6 +52,12 @@ function App() {
       />
 
       <Route path="/about" component = {About} />
+
+      <Route
+        exact
+        path='/ciudad/:ciudadId'
+        render={(match) => <Ciudad city={...city}/>}
+      />
       
       <Cards cities={cities} onClose={onClose} />
       <h2 class="h2">Weather app by Anderson Marín © 2022</h2>

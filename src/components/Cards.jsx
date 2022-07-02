@@ -15,6 +15,7 @@ function Cards(data) {
               max = {ciudad.max}
               name = {ciudad.name}
               img = {ciudad.img}
+              id = {ciudad.id}
               onClose = {() => data.onClose(ciudad.id)}
             />
           )

@@ -1,13 +1,14 @@
-import React from 'react'
-import style from './Card.module.css'
+import React from 'react';
+import style from './Card.module.css';
+import { Link } from 'react-router-dom';
 
 function Card(props) {
   return (
     <div className={style.card}>
       <button className={style.x} onClick={props.onClose}>x</button>
-      <div>
+      <Link to={`/ciudad/${props.id}`} >
         <h1 className={style.h1}>{props.name}</h1>
-      </div>
+      </Link>
       <div className={style.info}>
         <div className={style.subInfo}>
           <h2 className={style.h2}>Min</h2>

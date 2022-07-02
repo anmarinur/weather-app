@@ -1,3 +1,4 @@
+import React from 'react';
 import SearchBar from "./SearchBar"
 import style from "./Nav.module.css"
 import logo from "../logo.png"
@@ -12,9 +13,11 @@ function Nav(props) {
           <span className={style.text}>Weather App | Anderson Marín</span>
         </div>
       </Link>
+
       <Link to="/about">
         <span>About</span>
       </Link>
+
       <SearchBar onSearch={props.onSearch}/>
     </div>
   );
