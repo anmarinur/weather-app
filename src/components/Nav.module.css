@@ -1,27 +1,41 @@
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   background-color: #1D3E53;
   height: 80px;
 }
 
 .div {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0;
-  background-color: red;
+  /* background-color: red; */
+  width: 500px;
+  height: 80px;
 }
 
 .text {
   color: #fff;
   font-size: 20px;
-  padding: 0 50px;
 }
 
 .span {
-  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 80px;
+  width: 500px;
 }
 
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: pink; */
+  height: 80px;
+  width: 500px;
+}
 
 

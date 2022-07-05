@@ -1,12 +1,14 @@
 .main {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .input {
   height: 35px;
   background-color: #476D7C;
   margin-right: 10px;
-  width: 30%;
+  width: 80%;
   border: none;
   border-radius: 5px;
   font-family: inherit;
@@ -18,7 +20,7 @@
 }
 
 .button {
-  width: 10%;
+  width: 15%;
   background-color: #99B898;
   color: #2A363B;
   height: 35px;

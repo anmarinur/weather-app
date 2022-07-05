@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from "./SearchBar"
 import style from "./Nav.module.css"
-import logo from "../logo.png"
+// import logo from "../logo.png"
 import { Link } from 'react-router-dom'
  
 function Nav(props) {
@@ -9,12 +9,14 @@ function Nav(props) {
     <div className={style.nav}>
       <Link to="/">
         <div className={style.div}>
-          <img src={logo} alt="logo"></img>
+          {/* <img src={logo} alt="logo"></img> */}
           <span className={style.text}>Weather App | Anderson Marín</span>
         </div>
       </Link>
 
-      <SearchBar onSearch={props.onSearch}/>
+      <div className={style.searchBar}>
+        <SearchBar onSearch={props.onSearch}/>
+      </div>
 
       <Link to="/about">
         <div className={style.span}>
