@@ -18,6 +18,7 @@
 .text {
   color: #fff;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .span {
@@ -27,6 +28,8 @@
   /* background-color: aqua; */
   height: 80px;
   width: 500px;
+  color: #fff;
+  font-size: 20px;
 }
 
 .searchBar {

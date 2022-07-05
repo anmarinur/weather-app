@@ -13,26 +13,20 @@
   border-radius: 5px;
   font-family: inherit;
   font-size: 16px;
+  color: #fff;
 }
 
 .input::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .button {
   width: 15%;
-  background-color: #99B898;
-  color: #2A363B;
   height: 35px;
   border: none;
   border-radius: 5px;
   font-family: inherit;
   font-weight: bold;
   font-size: 15px;
-  transition: 0.5s;
-}
-
-.button:hover {
-  background-color: #E84A5F;
-  color: #343838;
+  cursor: pointer;
 }
