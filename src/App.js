@@ -44,11 +44,25 @@ function App() {
     setCities(previousState => previousState.filter(city => city.id !== id))
   }
 
+  function onFilter(ciudadId) {
+    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length > 0) {
+        return ciudad[0];
+    } else {
+        return null;
+    }
+  }
+
   return (
     <div>
+
+      <Nav onSearch={onSearch} />
+
       <Route 
+        strict
+        exact
         path="/"
-        render = {() => <Nav onSearch={onSearch} />} 
+        render = {() => <Cards cities={cities} onClose={onClose} />} 
       />
 
       <Route path="/about" component = {About} />
@@ -56,10 +70,9 @@ function App() {
       <Route
         exact
         path='/ciudad/:ciudadId'
-        render={(match) => <Ciudad city={...city}/>}
+        render={({match}) => <Ciudad city={onFilter(match.params.ciudadId)}/>}
       />
       
-      <Cards cities={cities} onClose={onClose} />
       <h2 class="h2">Weather app by Anderson Marín © 2022</h2>
     </div>
   );

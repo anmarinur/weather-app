@@ -1,8 +1,9 @@
 html, body {
   margin: 0;
-  font-family: 'Comfortaa', cursive;
-  background-color: #FFEEAD;
+  font-family: 'Heebo', sans-serif;
+  background-color: #476D7C;
   min-height: 100vh;
+  color: white;
 }
 
 #root {

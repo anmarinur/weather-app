@@ -14,11 +14,13 @@ function Nav(props) {
         </div>
       </Link>
 
-      <Link to="/about">
-        <span>About</span>
-      </Link>
-
       <SearchBar onSearch={props.onSearch}/>
+
+      <Link to="/about">
+        <div className={style.span}>
+          <span>About</span>
+        </div>
+      </Link>
     </div>
   );
 }
