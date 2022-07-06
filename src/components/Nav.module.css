@@ -19,6 +19,7 @@
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+  margin-left: 5px;
 }
 
 .span {
@@ -41,4 +42,7 @@
   width: 500px;
 }
 
+.link {
+  text-decoration: none;
+}
 

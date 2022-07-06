@@ -3,7 +3,7 @@ import Card from "./Card"
 import styles from './Cards.module.css'
 
 function Cards(data) {
-  console.log(data)
+
   if(data.cities){
     return (
       <div className={styles.cards}>

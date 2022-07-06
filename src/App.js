@@ -2,10 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import Cards from './components/Cards';
 import Nav from './components/Nav';
-import "./App.css";
 import { Route } from 'react-router-dom';
 import About from './components/About';
 import Ciudad from './components/Ciudad';
+import style from './App.module.css'
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -73,7 +73,7 @@ function App() {
         render={({match}) => <Ciudad city={onFilter(match.params.ciudadId)}/>}
       />
       
-      <h2 class="h2">Weather app by Anderson Marín © 2022</h2>
+      <h2 className={style.h2}>Weather app by Anderson Marín © 2022</h2>
     </div>
   );
 }

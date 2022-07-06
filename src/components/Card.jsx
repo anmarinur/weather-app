@@ -6,7 +6,7 @@ function Card(props) {
   return (
     <div className={style.card}>
       <button className={style.x} onClick={props.onClose}>x</button>
-      <Link to={`/ciudad/${props.id}`} >
+      <Link className={style.link} to={`/ciudad/${props.id}`} >
         <h1 className={style.h1}>{props.name}</h1>
       </Link>
       <div className={style.info}>

@@ -10,7 +10,14 @@ function SearchBar(prop) {
 
   return (
     <div className={style.main}>
-      <input className={style.input} type="text" placeholder="Ciudad..." onChange={handleInputChange} value={city}></input>
+      <input className={style.input} type="text" placeholder="Ciudad..." onChange={handleInputChange} onKeyPress={e =>
+      {
+        if (e.key === "Enter") {
+          prop.onSearch(city);
+          setCity('');
+        }
+      }
+      } value={city}></input>
         <div className={style.button} onClick={e => 
         {
           prop.onSearch(city);
