@@ -6,12 +6,12 @@ import { Route } from 'react-router-dom';
 import About from './components/About';
 import Ciudad from './components/Ciudad';
 import style from './App.module.css'
+import Login from './components/Login'
 
 function App() {
   const [cities, setCities] = useState([]);
 
   let apiKey = process.env.REACT_APP_APIKEY;
-  console.log(apiKey)
 
   function onSearch(ciudad) {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
@@ -66,6 +66,8 @@ function App() {
       />
 
       <Route path="/about" component = {About} />
+
+      <Route path="/login" component = {Login} />
 
       <Route
         exact

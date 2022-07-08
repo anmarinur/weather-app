@@ -26,6 +26,12 @@ function Nav(props) {
           <span>About</span>
         </div>
       </Link>
+
+      <Link className={style.link} to="/login">
+        <div className={style.span}>
+          <span>Login</span>
+        </div>
+      </Link>
     </div>
   );
 }
