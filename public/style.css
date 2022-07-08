@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   font-family: 'Heebo', sans-serif;
-  background-color: #476D7C;
+  background: rgb(37,75,98);
+  background: linear-gradient(180deg, rgba(37,75,98,1) 0%, rgba(71,109,124,1) 39%, rgba(119,171,183,1) 100%);
   min-height: 100vh;
   color: white;
 }
