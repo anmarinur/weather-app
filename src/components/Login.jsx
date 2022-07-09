@@ -51,6 +51,7 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit} className={style.form}>
+      <h1 className={style.h1}>Inicia sesión en <span  className={style.logo}>The Weather App</span>!</h1>
       <div className={style.div}>
         <label className={style.label} htmlFor="email">Correo: </label>
         <p className={style.error}>{errors.email ? errors.email : ''}</p>

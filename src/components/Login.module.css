@@ -6,7 +6,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   margin: 50px auto; 
   padding: 30px 10px; 
-  border-radius: 5px;
+  border-radius: 25px;
 }     
 
 .error {
@@ -19,15 +19,12 @@
 .input {
   width: 80%;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 70px;
   border: none;
   font-size: 19px;
   font-family: inherit;
   outline-color: #77ABB7;
-}
-
-.input[type='submit']:disabled {
-  background:rgba(255, 255, 255, 0.2)
+  text-indent: 15px;
 }
 
 .danger {
@@ -47,10 +44,26 @@
   width: 30%;
   height: 50px;
   font-family: inherit;
-  background-color: #77ABB7;
+  background-color: #1D3E53;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   color: white;
   margin-top: 20px;
   font-size: 19px;
+  transition: 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:disabled {
+  color: gray;
+}
+
+.h1 {
+  font-weight:normal;
+  font-family: inherit;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
 }

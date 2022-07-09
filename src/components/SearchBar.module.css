@@ -10,10 +10,12 @@
   margin-right: 10px;
   width: 80%;
   border: none;
-  border-radius: 5px;
+  border-radius: 70px;
   font-family: inherit;
   font-size: 16px;
   color: #fff;
+  text-indent: 15px;
+  outline-color: #77ABB7;
 }
 
 .input::placeholder {

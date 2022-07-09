@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from "./Card"
 import styles from './Cards.module.css'
+import Welcome from './Welcome'
 
 function Cards(data) {
 
-  if(data.cities){
+  if(data.cities.length !== 0){
+    console.log(data.cities)
     return (
       <div className={styles.cards}>
         {
@@ -25,7 +27,7 @@ function Cards(data) {
   } else {
     return(
       <div>
-        <h2>Sin ciudades</h2>
+        <Welcome />
       </div>
     )
   }

@@ -1,22 +1,30 @@
 .card {
   background-color: #fff;
-  border-radius: 3%;
+  border-radius: 25px;
   width: 300px;
   height: 250px;
   margin: 50px;
   transition: 0.5s;
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .x {
   position: relative;
-  top: 5px;
-  left: 255px;
+  top: 10px;
+  left: 250px;
   text-align: center;
   line-height: 0px;
-  padding-bottom: 5px; 
+  padding-bottom: 4px;
+  padding-left: 7px; 
   background-color: #77ABB7;
   border: none;
-  border-radius: 3%;
+  border-radius: 25px;
   height: 40px;
   width: 40px;
   color: #1D3E53;
@@ -38,7 +46,7 @@
   font-size: 35px;
   font-weight: bold;
   margin: 0px;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
   transition: 0.5s;
 }
@@ -82,8 +90,9 @@
 .img {
   display: block;
   margin: auto auto;
-  border-radius: 10%;
-  background-color:#77ABB7;
+  border-radius: 25px;
+  background: rgb(231,247,254);
+  background: linear-gradient(0deg,  rgba(119,171,183,1) 0%, rgb(209, 227, 234) 100%);
 }
 
 .link {
