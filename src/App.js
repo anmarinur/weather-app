@@ -16,8 +16,7 @@ function App() {
   function onSearch(ciudad) {
     // fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
     // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=/.netlify/functions/api&units=metric`)
-    const prueba = `/.netlify/functions/api`;
-    fetch(prueba)
+    fetch('/.netlify/functions/api')
     .then((dato) => console.log("Respuesta: " + dato))
     .then(res => res.json())
     .then(data => 
