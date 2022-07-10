@@ -18,7 +18,7 @@ function App() {
     // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=/.netlify/functions/api&units=metric`)
     const prueba = "/.netlify/functions";
     fetch(prueba)
-    .then((dato) => console.log(dato))
+    .then((dato) => console.log("Respuesta: " + dato))
     .then(res => res.json())
     .then(data => 
       {
