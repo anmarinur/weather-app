@@ -2,7 +2,7 @@ const apiKey = process.env.REACT_APP_APIKEY;
 
 exports.handler = async (event) => {
 
-  const key = apiKey;
+  const key = `http://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric` + apiKey;
 
   const response = await fetch(key);
   const data = await response.json();
